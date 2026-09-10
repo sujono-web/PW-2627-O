@@ -1,5 +1,4 @@
-# pertemuan-01
-# {nim}-PWD-{kelompok}-2526O
+# {DPWL}-PWD-{SI04}-2526O
 Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16<br>
 Matakuliah Pemrograman Web Dasar<br>
 Kelompok {kelompok}<br>
