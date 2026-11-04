@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Data Mahasiswa</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 4px 8px;
+            font-family: Times New Roman, serif;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="date"] {
+            width: 200px;
+            padding: 2px 4px;
+            font-family: Times New Roman, serif;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            font-family: Times New Roman, serif;
+            font-size: 14px;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td>NIM Mahasiswa</td>
+                <td><input type="text" name="nimmhs123" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>Nama Mahasiswa</td>
+                <td><input type="text" name="namamhs123" maxlength="150" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Mahasiswa</td>
+                <td><input type="text" name="alamatmhs123" maxlength="200" required></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text" name="tempatlahirmhs123" maxlength="100" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="tanggallahirmhs123" required></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td><input type="text" name="jurusanmhs123" maxlength="20" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="simpan" value="Simpan"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

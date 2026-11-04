@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Responsif</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .kartu {
+            padding: 25px;
+            background-color: #dceafe;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Komputer */
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            header {
+                text-align: left;
+                padding-left: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Web Studio</h1>
+        <p>Belajar Membuat Website Responsif</p>
+    </header>
+
+    <main class="container">
+        <section class="kartu">
+            <h3>Web Development</h3>
+            <p>Membangun website modern.</p>
+        </section>
+
+        <section class="kartu">
+            <h3>UI/UX Design</h3>
+            <p>Membuat desain yang nyaman digunakan.</p>
+        </section>
+
+        <section class="kartu">
+            <h3>Digital Marketing</h3>
+            <p>Mempromosikan produk secara digital.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>

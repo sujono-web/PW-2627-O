@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Grid</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Tampilan dasar: mobile-first */
+        .layanan {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .kartu {
+            background-color: #dceafe;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Tampilan tablet */
+        @media (min-width: 768px) {
+            .layanan {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Tampilan komputer */
+        @media (min-width: 1024px) {
+            .layanan {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Layanan Web Studio</h1>
+
+    <div class="layanan">
+        <div class="kartu">
+            <h3>Web Development</h3>
+            <p>Pembuatan website modern.</p>
+        </div>
+
+        <div class="kartu">
+            <h3>UI/UX Design</h3>
+            <p>Desain antarmuka yang menarik.</p>
+        </div>
+
+        <div class="kartu">
+            <h3>Digital Marketing</h3>
+            <p>Promosi melalui media digital.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

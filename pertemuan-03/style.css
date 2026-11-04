@@ -1,0 +1,38 @@
+ h1 {
+     color: #8f0555;
+     font-size: 28px;
+     background-color: #f7dfec;
+     padding: 10px;
+     border-radius: 5px;
+ }
+
+ /* Selector elemen */
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f6f9;
+     color: #333;
+ }
+
+ /* Selector class */
+ .form-control {
+     /*width: 100%;
+     padding: 10px;
+     border: 1px solid #0c29ad;*/
+     border-radius: 5px;
+ }
+
+ .form-control1 {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #cb3208;
+     border-radius: 5px;
+ }
+
+ /* Selector id */
+ #tombol-kirim {
+     background-color: #007bff;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+ }
