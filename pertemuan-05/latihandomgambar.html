@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM - Mengubah Gambar</title>
+
+
+</head>
+
+<body>
+    <h2>Belajar Manipulasi DOM</h2>
+
+    <div>
+        <img src="gbr1.png" class="foto">
+    </div>
+    <br>
+
+    <button onclick="ubahGambar()">
+        Ubah Gambar
+    </button>
+    <script>
+        function ubahGambar() {
+            let gambar = document.querySelectorAll(".foto");
+            gambar.forEach(function (item) {
+                // Cek apakah sumber gambar saat ini adalah gbr1.png
+                // (Menggunakan endsWith agar aman jika terbaca path lengkapnya)
+                if (item.src.endsWith("gbr1.png")) {
+                    item.src = "gbr2.png"; // Ubah ke gbr2 jika awalnya gbr1
+                } else {
+                    item.src = "gbr1.png"; // Kembalikan ke gbr1 jika bukan
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
